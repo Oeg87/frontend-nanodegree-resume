@@ -4,14 +4,14 @@ var bio = {
 	"role" : "web designer",
 	"contacts" : {
 		"mobile" : "000777888",
-		"email" : "baygeo87@gmail.com",
+		"email" : "my@email.com",
 		"github" : "oeg87",
 		"twitter" : "oeg87",
-		"location": "Lugano"
+		"location": "Lugano, Switzerland"
 	},
-	"welcomeMessage" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+	"welcomeMessage" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia vel iste quod soluta iure aspernatur tempora excepturi tempore deleniti quisquam natus hic debitis perspiciatis alias neque, explicabo maxime eligendi repudiandae. Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
 	"skills" :  [
-		"HTML", "CSS", "jQuery", "UX"
+		"HTML", "CSS", "UX", "UI"
 	],
 	"bioPic" : "images/fry.jpg",
 	displayBio :function() {
@@ -39,14 +39,10 @@ var bio = {
 		if ( bio.skills.length > 0 ) {
 			$('#header').append(HTMLskillsStart);
 
-			var formattedSkill = HTMLskills.replace("%data%", bio.skills[0]);
-			$("#skills").append(formattedSkill);
-			formattedSkill = HTMLskills.replace("%data%", bio.skills[1]);
-			$("#skills").append(formattedSkill);
-			formattedSkill = HTMLskills.replace("%data%", bio.skills[2]);
-			$("#skills").append(formattedSkill);
-			formattedSkill = HTMLskills.replace("%data%", bio.skills[3]);
-			$("#skills").append(formattedSkill);
+			for ( var i = 0; i < bio.skills.length; i++) {
+				var formattedSkill = HTMLskills.replace("%data%", bio.skills[i]);
+				$("#skills").append(formattedSkill);
+			}
 		} 
 	}
 };
@@ -162,7 +158,7 @@ var work = {
 		for ( job in work.jobs ) {
 			$("#workExperience").append(HTMLworkStart);
 
-			var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
+			var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer).replace('#','#mapDiv');
 			var formattedTitle = HTMLworkTitle.replace("%data%", work.jobs[job].title);
 			var formattedEmployerTitle = formattedEmployer + formattedTitle;
 

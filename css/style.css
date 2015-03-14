@@ -80,15 +80,18 @@ a {
 }
 
 .welcome-message {
+  padding: 0;
+  display: inline;
   font-style: italic;
-  font-size: 18px;
+  font-size: 16px;
   color: #F3F3F3;
-  line-height: 28px;
+  line-height: 1.2em;
 }
 
 #skillsH3 {
   color: #F5AE23;
   display: none;
+  font-style: normal;
 }
 
 .orange {
@@ -214,5 +217,54 @@ span {
   }
 }
 
+/*PERSONAL CSS*/
+hr {
+  height: 1px;
+  background-color: white;
+  border:0;
+}
+#skills .flex-item {
+  padding: 5px;
+  border: 1px solid gray;
+  background-color: #999;
+}
+
+
+#name + span {
+  display: block;
+  color: white;r
+}
+
+.biopic {
+  padding: 0 1em 0 0;
+}
+
+#topContacts {
+  overflow: hidden;
+}
+
+
+#education h3 {
+  margin-top:1em;
+}
+.work-entry,
+.project-entry,
+.education-entry {
+  padding-top: 0;
+  padding-bottom: 0.5em;
+}
+.work-entry + .work-entry,
+.project-entry + .project-entry,
+.education-entry + .education-entry,
+#projects,
+#workExperience{
+  border-top: 1px solid #999;
+}
+
+.work-entry + .work-entry,
+.project-entry + .project-entry,
+.education-entry + .education-entry {
+  border-color: #ccc;
+}
 
 
