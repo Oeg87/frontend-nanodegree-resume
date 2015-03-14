@@ -31,6 +31,7 @@ var bio = {
 			results = results + template.replace("%data%", data);
 		}
 		$("#topContacts").append(results);
+		$("#footerContacts").append(results);
 
 		//ADD PIC + WELCOME MSG
 		$('#header').append(formattedBioPic, formattedWelcome);

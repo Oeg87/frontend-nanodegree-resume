@@ -236,11 +236,17 @@ hr {
   overflow: hidden;
 }
 #topContacts .orange-text,
-#topContacts .white-text {
+#topContacts .white-text,
+#footerContacts .orange-text,
+#footerContacts .white-text{
   display: inline-block;
   width: 50%;
-  text-align: center;
+  text-align: left;
   box-sizing: border-box;
+}
+#topContacts .orange-text,
+#footerContacts .orange-text{
+  text-align: right;
 }
 
 #education h3 {
@@ -291,9 +297,10 @@ hr {
     text-align: left;
   }
   #topContacts .orange-text,
-  #topContacts .white-text {
+  #topContacts .white-text,
+  #footerContacts .orange-text,
+  #footerContacts .white-text {
     display: inline;
-    
     text-align: left;
     box-sizing: border-box;
   }

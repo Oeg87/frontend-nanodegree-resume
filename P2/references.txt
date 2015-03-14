@@ -1,0 +1,13 @@
+
+Basic Know-how
+---
+http://www.webopedia.com/TERM/A/API.html
+http://money.howstuffworks.com/business-communications/how-to-leverage-an-api-for-conferencing1.htm
+http://searchexchange.techtarget.com/definition/application-program-interface
+http://www.w3schools.com/
+
+
+Google API
+---
+https://developers.google.com/maps/documentation/javascript/events#MarkerEvents
+https://developers.google.com/maps/documentation/javascript/geocoding#ReverseGeocoding
