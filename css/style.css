@@ -123,10 +123,6 @@ a {
 }
 
 .flex-box {
-  display: -webkit-flex;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-around;
   padding: 10px;
 }
@@ -209,14 +205,6 @@ span {
   width: 100%;
   padding-bottom: 5%;
 }
-
-@media only screen and (min-width: 750px) {
-  #skillsH3,
-  .biopic {
-    display: block;
-  }
-}
-
 /*PERSONAL CSS*/
 hr {
   height: 1px;
@@ -227,12 +215,17 @@ hr {
   padding: 5px;
   border: 1px solid gray;
   background-color: #999;
+  text-align: center;
 }
-
+#name {
+  display: block;
+  text-align: center;
+}
 
 #name + span {
   display: block;
-  color: white;r
+  color: white;
+  text-align: center;
 }
 
 .biopic {
@@ -242,7 +235,13 @@ hr {
 #topContacts {
   overflow: hidden;
 }
-
+#topContacts .orange-text,
+#topContacts .white-text {
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+  box-sizing: border-box;
+}
 
 #education h3 {
   margin-top:1em;
@@ -257,14 +256,48 @@ hr {
 .project-entry + .project-entry,
 .education-entry + .education-entry,
 #projects,
-#workExperience{
-  border-top: 1px solid #999;
+#workExperience,
+#education,
+#mapDiv{
+  border-top: 1px solid #666666;
 }
 
 .work-entry + .work-entry,
 .project-entry + .project-entry,
 .education-entry + .education-entry {
   border-color: #ccc;
+}
+
+
+/*END PERSONAL CSS*/
+@media only screen and (min-width: 750px) {
+  #skillsH3,
+  .biopic {
+    display: block;
+  }
+  .flex-box {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+  }
+  #name {
+    text-align: left;
+  }
+
+  #name + span {
+    text-align: left;
+  }
+  #topContacts .orange-text,
+  #topContacts .white-text {
+    display: inline;
+    
+    text-align: left;
+    box-sizing: border-box;
+  }
+
 }
 
 

@@ -139,7 +139,7 @@ var work = {
 		{
 			"title" : "managment",
 			"dates" : [2010],
-			"description" : "pinco pallo parapallo",
+			"description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt harum beatae quisquam consequatur maiores eveniet, distinctio, sunt laudantium molestiae dolore delectus facilis ab optio suscipit fuga fugit! Perspiciatis, distinctio similique?",
 			"images" : [
 				"images/197x148.gif",
 				"images/197x148.gif"
@@ -148,7 +148,7 @@ var work = {
 		{
 			"title" : "pardo live",
 			"dates" : [2011],
-			"description" : "facciamo il pardo pardino pardello",
+			"description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero nihil quod ipsum corporis enim? Officiis nam omnis iure molestiae aperiam deleniti dolorem consequatur accusamus nesciunt, natus id odit, quo optio.",
 			"images" : [
 				"images/197x148.gif"
 			]
